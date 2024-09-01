@@ -2,13 +2,12 @@
   "type": "createcatal:roaring",
   "ingredients": [
     {
-      "item": "minecraft:heart_of_the_sea"
+      "item": "minecraft:egg"
     }
   ],
   "results": [
     {
-      "item": "minecraft:ender_pearl",
-      "amount": 16
+      "item": "minecraft:ender_pearl"
     }
   ]
 }

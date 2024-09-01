@@ -2,7 +2,7 @@
   "type": "createcatal:roaring",
   "ingredients": [
     {
-      "tag": "forge:fruit"
+      "item": "minecraft:apple"
     }
   ],
   "results": [

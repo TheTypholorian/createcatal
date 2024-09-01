@@ -6,6 +6,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.damagesource.DamageType;
+import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelReader;
@@ -14,7 +15,7 @@ import javax.annotation.Nullable;
 
 public class DamageSources {
     public static DamageSource fanRoar(Level level) {
-        return source(AllDamageTypes.FAN_FIRE, level);
+        return source(DamageTypes.DRAGON_BREATH, level);
     }
 
     private static DamageSource source(ResourceKey<DamageType> key, LevelReader level) {
