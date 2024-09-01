@@ -1,0 +1,13 @@
+{
+  "type": "createcatal:roaring",
+  "ingredients": [
+    {
+      "item": "minecraft:blaze_rod"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:end_rod"
+    }
+  ]
+}
