@@ -1,0 +1,13 @@
+{
+  "type": "createcatal:shrieking",
+  "ingredients": [
+    {
+      "item": "minecraft:bone_block"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:sculk_catalyst"
+    }
+  ]
+}

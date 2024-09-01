@@ -1,0 +1,13 @@
+{
+  "type": "createcatal:roaring",
+  "ingredients": [
+    {
+      "item": "minecraft:bedrock"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:end_portal_frame"
+    }
+  ]
+}

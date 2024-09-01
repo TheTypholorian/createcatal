@@ -1,0 +1,13 @@
+{
+  "type": "createcatal:shrieking",
+  "ingredients": [
+    {
+      "item": "minecraft:amethyst_shard"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:echo_shard"
+    }
+  ]
+}

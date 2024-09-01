@@ -1,0 +1,13 @@
+{
+  "type": "createcatal:roaring",
+  "ingredients": [
+    {
+      "tag": "forge:fruit"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:chorus_fruit"
+    }
+  ]
+}

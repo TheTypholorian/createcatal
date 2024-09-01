@@ -1,0 +1,13 @@
+{
+  "type": "createcatal:shrieking",
+  "ingredients": [
+    {
+      "tag": "forge:stone"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:sculk"
+    }
+  ]
+}

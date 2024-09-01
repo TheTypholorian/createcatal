@@ -1,0 +1,13 @@
+{
+  "type": "createcatal:roaring",
+  "ingredients": [
+    {
+      "tag": "forge:stone"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:end_stone"
+    }
+  ]
+}
