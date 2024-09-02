@@ -76,7 +76,7 @@ public class RoaringType implements FanProcessingType {
     public void affectEntity(Entity entity, Level level) {
         if (entity instanceof LivingEntity l) {
             l.hurt(DamageSources.fanRoar(level), 4);
-            l.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 100, 1, false, false)); // Confuses entity for 5 seconds
+            l.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 20, 1, false, false)); // Confuses entity for 5 seconds
         }
     }
 }

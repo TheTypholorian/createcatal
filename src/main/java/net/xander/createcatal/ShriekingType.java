@@ -72,7 +72,7 @@ public class ShriekingType implements FanProcessingType {
     @Override
     public void affectEntity(Entity entity, Level level) {
         if (entity instanceof LivingEntity l) {
-            l.addEffect(new MobEffectInstance(MobEffects.DARKNESS, 100, 1, false, false)); // Frightens entity for 5 seconds
+            l.addEffect(new MobEffectInstance(MobEffects.DARKNESS, 20, 1, false, false)); // Frightens entity for 5 seconds
         }
     }
 }

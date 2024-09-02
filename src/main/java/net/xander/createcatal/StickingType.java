@@ -91,7 +91,7 @@ public class StickingType implements FanProcessingType {
     @Override
     public void affectEntity(Entity entity, Level level) {
         if (entity instanceof LivingEntity l) {
-            l.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 100, 1, false, false)); // Slows entity for 5 seconds
+            l.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 20, 1, false, false)); // Slows entity for 5 seconds
         }
     }
 }
