@@ -30,6 +30,10 @@ public class SinningType implements FanProcessingType {
 
     @Override
     public boolean isValidAt(Level level, BlockPos pos) {
+        if (!Config.ENABLE_SINNING.get()) {
+            return false;
+        }
+
         return level.getBlockState(pos).is(Blocks.NETHER_PORTAL);
     }
 

@@ -36,6 +36,10 @@ public class SavoringType implements FanProcessingType {
 
     @Override
     public boolean isValidAt(Level level, BlockPos pos) {
+        if (!Config.ENABLE_SAVORING.get()) {
+            return false;
+        }
+
         FluidState fluidState = level.getFluidState(pos);
         return fluidState.is(FluidTags.create(new ResourceLocation("forge:chocolate")));
     }

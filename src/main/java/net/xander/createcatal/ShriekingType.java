@@ -27,6 +27,10 @@ public class ShriekingType implements FanProcessingType {
 
     @Override
     public boolean isValidAt(Level level, BlockPos pos) {
+        if (!Config.ENABLE_SHRIEKING.get()) {
+            return false;
+        }
+
         return level.getBlockState(pos).is(Blocks.SCULK_SHRIEKER);
     }
 

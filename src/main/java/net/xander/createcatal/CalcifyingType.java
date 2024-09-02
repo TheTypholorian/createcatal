@@ -39,6 +39,10 @@ public class CalcifyingType implements FanProcessingType {
 
     @Override
     public boolean isValidAt(Level level, BlockPos pos) {
+        if (!Config.ENABLE_CALCIFYING.get()) {
+            return false;
+        }
+
         return level.getFluidState(pos).is(FluidTags.create(new ResourceLocation("forge:milk")));
     }
 

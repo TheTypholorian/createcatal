@@ -5,7 +5,9 @@ import com.simibubi.create.content.kinetics.fan.processing.FanProcessingTypeRegi
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 @Mod(CreateCatal.MODID)
@@ -21,7 +23,7 @@ public class CreateCatal {
     public static final RootingType ROOTING = register("rooting", new RootingType());
 
     private static <T extends FanProcessingType> T register(String id, T type) {
-        FanProcessingTypeRegistry.register(asResource(id), type);
+        FanProcessingTypeRegistry.register(CreateCatal.asResource(id), type);
         return type;
     }
 
@@ -32,6 +34,8 @@ public class CreateCatal {
         Blocks.REGISTRY.register(bus);
         Fluids.REGISTRY.register(bus);
         Fluids.TYPE_REGISTRY.register(bus);
+
+        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.SPEC);
 
         MinecraftForge.EVENT_BUS.register(this);
     }

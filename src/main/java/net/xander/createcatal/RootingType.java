@@ -34,12 +34,12 @@ public class RootingType implements FanProcessingType {
         }
     }
 
-    public static DustParticleOptions createParticle(RandomSource random) {
-        return new DustParticleOptions(createParticleColor(random).asVectorF(), random.nextFloat());
-    }
-
     @Override
     public boolean isValidAt(Level level, BlockPos pos) {
+        if (!Config.ENABLE_ROOTING.get()) {
+            return false;
+        }
+
         BlockState state = level.getBlockState(pos);
         return state.is(Blocks.AZALEA) || state.is(Blocks.FLOWERING_AZALEA);
     }

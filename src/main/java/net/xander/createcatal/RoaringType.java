@@ -29,6 +29,10 @@ public class RoaringType implements FanProcessingType {
 
     @Override
     public boolean isValidAt(Level level, BlockPos pos) {
+        if (!Config.ENABLE_ROARING.get()) {
+            return false;
+        }
+
         BlockState state = level.getBlockState(pos);
         return state.is(Blocks.DRAGON_HEAD) || state.is(Blocks.DRAGON_WALL_HEAD);
     }

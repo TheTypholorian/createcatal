@@ -34,6 +34,10 @@ public class StickingType implements FanProcessingType {
 
     @Override
     public boolean isValidAt(Level level, BlockPos pos) {
+        if (!Config.ENABLE_STICKING.get()) {
+            return false;
+        }
+
         FluidState fluidState = level.getFluidState(pos);
         return fluidState.is(FluidTags.create(new ResourceLocation("forge:honey")));
     }
