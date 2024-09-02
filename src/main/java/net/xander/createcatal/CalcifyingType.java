@@ -1,21 +1,18 @@
 package net.xander.createcatal;
 
-import com.simibubi.create.AllFluids;
+import com.simibubi.create.AllBlocks;
 import com.simibubi.create.AllRecipeTypes;
 import com.simibubi.create.content.fluids.transfer.FillingRecipe;
 import com.simibubi.create.content.kinetics.fan.processing.FanProcessingType;
 import com.simibubi.create.foundation.recipe.RecipeApplier;
 import com.simibubi.create.foundation.utility.Color;
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.particles.BlockParticleOption;
 import net.minecraft.core.particles.DustParticleOptions;
-import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.FluidTags;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemStack;
@@ -42,8 +39,7 @@ public class CalcifyingType implements FanProcessingType {
 
     @Override
     public boolean isValidAt(Level level, BlockPos pos) {
-        FluidState fluidState = level.getFluidState(pos);
-        return fluidState.is(FluidTags.create(new ResourceLocation("forge:milk")));
+        return level.getFluidState(pos).is(FluidTags.create(new ResourceLocation("forge:milk")));
     }
 
     /**
