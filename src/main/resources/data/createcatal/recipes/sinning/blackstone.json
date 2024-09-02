@@ -2,12 +2,12 @@
   "type": "createcatal:sinning",
   "ingredients": [
     {
-      "tag": "minecraft:cobbled_deepslate"
+      "item": "minecraft:deepslate"
     }
   ],
   "results": [
     {
-      "item": "minecraft:netherrack"
+      "item": "minecraft:blackstone",
     }
   ]
 }

@@ -7,7 +7,8 @@
   ],
   "results": [
     {
-      "item": "minecraft:bone_block"
+      "item": "minecraft:bone_block",
+      "chance": 0.025
     }
   ]
 }
