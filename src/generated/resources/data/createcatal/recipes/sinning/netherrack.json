@@ -2,7 +2,7 @@
   "type": "createcatal:sinning",
   "ingredients": [
     {
-      "tag": "forge:stone"
+      "item": "minecraft:stone"
     }
   ],
   "results": [

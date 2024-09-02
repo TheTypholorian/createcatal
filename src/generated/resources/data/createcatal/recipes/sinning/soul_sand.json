@@ -2,7 +2,7 @@
   "type": "createcatal:sinning",
   "ingredients": [
     {
-      "tag": "minecraft:sand"
+      "tag": "forge:sand"
     }
   ],
   "results": [
