@@ -17,6 +17,7 @@ public class CreateCatal {
     public static final ShriekingType SHRIEKING = register("shrieking", new ShriekingType());
     public static final RoaringType ROARING = register("roaring", new RoaringType());
     public static final SinningType SINNING = register("sinning", new SinningType());
+    public static final CalcifyingType CALCIFYING = register("calcifying", new CalcifyingType());
 
     private static <T extends FanProcessingType> T register(String id, T type) {
         FanProcessingTypeRegistry.register(asResource(id), type);
@@ -25,7 +26,11 @@ public class CreateCatal {
 
     public CreateCatal() {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+
         RecipeTypes.register(bus);
+        Blocks.REGISTRY.register(bus);
+        Fluids.REGISTRY.register(bus);
+        Fluids.TYPE_REGISTRY.register(bus);
 
         MinecraftForge.EVENT_BUS.register(this);
     }
