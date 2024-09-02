@@ -22,7 +22,8 @@ import java.util.function.Supplier;
 
 public enum RecipeTypes implements IRecipeTypeInfo {
     SHRIEKING(ShriekingRecipe::new),
-    ROARING(RoaringRecipe::new);
+    ROARING(RoaringRecipe::new),
+    SINNING(SinningRecipe::new);
 
     public static final Predicate<? super Recipe<?>> CAN_BE_AUTOMATED = r -> !r.getId()
             .getPath()

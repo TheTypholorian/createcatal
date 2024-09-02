@@ -18,6 +18,10 @@ public class DamageSources {
         return source(DamageTypes.DRAGON_BREATH, level);
     }
 
+    public static DamageSource fanSin(Level level) {
+        return source(DamageTypes.LAVA, level);
+    }
+
     private static DamageSource source(ResourceKey<DamageType> key, LevelReader level) {
         Registry<DamageType> registry = level.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE);
         return new DamageSource(registry.getHolderOrThrow(key));

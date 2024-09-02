@@ -1,0 +1,13 @@
+{
+  "type": "createcatal:sinning",
+  "ingredients": [
+    {
+      "tag": "minecraft:dripstone_block"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:basalt"
+    }
+  ]
+}

@@ -16,6 +16,7 @@ public class CreateCatal {
     public static final SavoringType SAVORING = register("savoring", new SavoringType());
     public static final ShriekingType SHRIEKING = register("shrieking", new ShriekingType());
     public static final RoaringType ROARING = register("roaring", new RoaringType());
+    public static final SinningType SINNING = register("sinning", new SinningType());
 
     private static <T extends FanProcessingType> T register(String id, T type) {
         FanProcessingTypeRegistry.register(asResource(id), type);

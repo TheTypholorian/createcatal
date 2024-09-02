@@ -1,0 +1,13 @@
+{
+  "type": "createcatal:sinning",
+  "ingredients": [
+    {
+      "tag": "minecraft:red_sand"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:soul_soil"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "type": "createcatal:sinning",
+  "ingredients": [
+    {
+      "tag": "forge:stone"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:netherrack"
+    }
+  ]
+}

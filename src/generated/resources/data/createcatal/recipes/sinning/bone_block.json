@@ -1,0 +1,13 @@
+{
+  "type": "createcatal:sinning",
+  "ingredients": [
+    {
+      "tag": "forge:sandstone"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:bone_block"
+    }
+  ]
+}

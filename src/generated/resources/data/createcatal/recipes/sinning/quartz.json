@@ -1,0 +1,13 @@
+{
+  "type": "createcatal:sinning",
+  "ingredients": [
+    {
+      "tag": "forge:gems/emerald"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:quartz"
+    }
+  ]
+}

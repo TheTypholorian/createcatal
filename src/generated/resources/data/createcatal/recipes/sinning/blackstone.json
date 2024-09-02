@@ -1,0 +1,13 @@
+{
+  "type": "createcatal:sinning",
+  "ingredients": [
+    {
+      "tag": "minecraft:cobbled_deepslate"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:netherrack"
+    }
+  ]
+}
